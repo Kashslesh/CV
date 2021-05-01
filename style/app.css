@@ -57,15 +57,20 @@ nav > ul > li {
 }
 .item-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: white;
   height: 100vh;
 }
 .photo {
   margin-left: auto;
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 .photo > img {
   width: 400px;
+}
+.infodiv{
+  grid-column: 2;
+  grid-row: 1 / span 2;
 }
 .infodiv > h3 {
   margin-left: 25px;
@@ -89,4 +94,14 @@ nav > ul > li {
 .remplir > ul > li {
   margin: 20px 0 10px 0;
   font-size: 15px;
+}
+.fabicons {
+  font-size: 50px;
+  margin: auto 20px;
+}
+.pictures{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  grid-column: 1 / span 3;
 }
