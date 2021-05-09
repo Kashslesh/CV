@@ -5,68 +5,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum vitae</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    ></script>
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style/app.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="/img/IVAN LOGO 05.png" alt="logoIvan" />
+        <a href="https://www.linkedin.com/in/ivan-titov-b981041b6/"><img src="/img/IVAN LOGO 05.png" alt="logoIvan" /></a>
       </div>
       <nav>
         <ul>
-          <li><a href="">Accueile</a></li>
-          <li><a href="">A propos de moi</a></li>
-          <li><a href="">Cv</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="/">Accueile</a></li>
+          <li><a href="#profile">A propos de moi</a></li>
+          <li><a href="#cv">Cv</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+      <span></span>
+      </label>
+      <ul class="menu__box">
+        <li><a class="menu__item" href="/">Accueile</a></li>
+        <li><a class="menu__item" href="#profile">A propos de moi</a></li>
+        <li><a class="menu__item" href="#cv">Cv</a></li>
+        <li><a class="menu__item" href="#contact">Contact</a></li>
+      </ul>
+    </div>
     </header>
-    <section class="item-1">
+    <section id="home" class="item-1">
       <div class="salut">
         <p>Salut, je m'appelle</p>
         <h1>Titov Ivan</h1>
-        <h2>Je suis Développeur Web</h2>
+        <h2 >Je suis <span class="hero"></span></h2>
       </div>
     </section>
-    <section class="item-2">
+    <section id="profile" class="item-2">
       <div class="photo">
-        <img src="/img/ivan.jpg" alt="" />
+        <img id="photo" src="/img/ivan.jpg" alt="" />
       </div>
       <div class="infodiv">
-        <h3>À propos de moi</h3>
+        <h3>A propos de moi</h3>
         <div class="form">
           <div class="info">
             <ul>
-              <li>Nom et Prénom</li>
-              <li>Date de naissance</li>
-              <li>Adresse</li>
-              <li>Email</li>
-              <li>Numéro de téléphone</li>
+              <li class="text-animation">Nom et Prénom</li>
+              <li class="text-animation">Date de naissance</li>
+              <li class="text-animation">Adresse</li>
+              <li class="text-animation" >Email</li>
+              <li class="text-animation">Numéro de téléphone</li>
             </ul>
           </div>
           <div class="remplir">
             <ul>
-              <li>Titov Ivan</li>
-              <li>9 décembre, 1993</li>
-              <li>86 Boulevard de Pont de Vivaux,13010 Marseille</li>
-              <li>Kash174rus@gmail.com</li>
-              <li>+33(0)7.52.11.22.90</li>
+              <li class="text-animation" >Titov Ivan</li>
+              <li class="text-animation">9 décembre, 1993</li>
+              <li class="text-animation">86 Boulevard de Pont de Vivaux,13010 Marseille</li>
+              <li class="text-animation">Kash174rus@gmail.com</li>
+              <li class="text-animation">+33(0)7.52.11.00.00</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="pictures">
-        <i class="fab fa-laravel fabicons"></i>
-        <i class="fab fa-php fabicons"></i>
-        <i class="fab fa-node-js fabicons"></i>
-        <i class="fab fa-html5 fabicons"></i>
-        <i class="fab fa-css3-alt fabicons"></i>
+        <i class="fab fa-laravel fabicons items-animation"></i>
+        <i class="fab fa-php fabicons items-animation"></i>
+        <i class="fab fa-node-js fabicons items-animation"></i>
+        <i class="fab fa-html5 fabicons items-animation"></i>
+        <i class="fab fa-css3-alt fabicons items"></i>
       </div>
     </section>
-    <section class="intem-3">
-  </section>
+    <section id="cv"  class="item-3">
+      <div class="blocknav">
+        <a href="#Formation">Formation</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Compétences">Compétences</a>
+      </div>
+      <div class="block-info">
+        <div id="Formation"  class="block">
+          <h3>Formation</h3>
+          <div class="information">
+            <div class="flex">
+              <i class="icons fas fa-university"></i>
+              <div class="donnes">
+                <p class="date">2020-2021</p>
+                <h4>Développeur Web et Web mobile</h4>
+                <p>Simplon.co</p>
+                <div class="wrapeline"></div>
+              </div>
+            </div>
+            <div class="information">
+              <div class="flex">
+                <i class=" icons fas fa-university"></i>
+                <div class="donnes">
+                  <p class="date">2013-2017</p>
+                  <h4>Finance et Crédit</h4>
+                  <p>Université d'État de Tcheliabinsk” à Tcheliabinsk</p>
+                  <p>Études supérieures “Établissement Public
+                    d'Enseignement Supérieur d'État</p>
+                  <div class="wrapeline"></div>
+                </div>
+              </div>
+              <div class="information">
+                <div class="flex">
+                  <i class="fas fa-university icons"></i>
+                  <div class="donnes">
+                    <p class="date">2009-2012</p>
+                    <h4>Comptable</h4>
+                    <p>"Établissement Public d'Enseignement d'Etat Université <br>technique d'Etat G.I Nosova de Magnitogorsk à Magnitogorsk"</p>
+                    <P>Étude secondaire professionnelle</P>
+                    <div class="wrapeline"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-info">
+        <div id="Experience" class="block">
+          <h3>Experience</h3>
+          <div   class="information">
+            <div class="information">
+              <div class="flex">
+                <i class=" icons fas fa-university"></i>
+                <div class="donnes">
+                  <p class="date">2014-2017</p>
+                  <h4>Chef d'Equipe en usine de pâtes</h4>
+                  <p>sitno.ru</p>
+                  <div class="wrapeline"></div>
+                </div>
+              </div>
+              <div class="information">
+                <div class="flex">
+                  <i class="fas fa-university icons"></i>
+                  <div class="donnes">
+                    <p class="date">2013-2014</p>
+                    <h4>Vendeur en magasin d'alcool</h4>
+                    <P>krasnoeibeloe.ru</P>
+                    <div class="wrapeline"></div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-info">
+        <div id="Compétences"  class="block">
+          <h3>Compétences</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>HTML 5</h4>
+              <div class="centre">
+                <i class="fas fa-file-code fabicons"></i>
+              </div>
+            </div>
+            <div class="card">
+              <h4>CSS 3</h4>
+              <div class="centre">
+
+                <i class="fab fa-css3-alt fabicons"></i>
+              </div>
+            </div>
+            <div class="card">
+              <h4>JavaScript</h4>
+              <div class="centre">
+
+                <i class="fab fa-js-square fabicons"></i>
+              </div>
+            </div>
+            <div class="card">
+              <h4>PHP</h4>
+              <div class="centre ">
+
+                <i class="fab fa-php fabicons "></i>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <section id="contact" class="item-4">
+      <h2>Contactez-moi</h2>
+      <div class="contact">
+        <div class="card">
+          <i class="far fa-compass fabicons centre"></i>
+          <p>86 Boulevard de Pont de Vivaux</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-mobile-alt fabicons centre"></i>
+          <p>+33(0)7.52.11.00.00</p>
+        </div>
+        <div class="card">
+          <a href="https://github.com/Kashslesh"><i class="fab fa-github fabicons centre"></i></a>
+          <p>Mon GitHub</p>
+        </div>
+        <div class="card">
+          <a href="https://www.linkedin.com/in/ivan-titov-b981041b6/"><i class="fab fa-linkedin-in fabicons centre"></i></a>
+          <p>Linkedin</p>
+        </div>
+      </div>
+      <div class="formulaire"> 
+        <form class="box" action="/signup" method="POST" >
+          <input id="username" name="username"  required  placeholder="Votre nom"/>
+          <input id="email" name="email" type="email" required placeholder="Votre email" />
+          <input id="sujet" name="sujet" type="text" required placeholder="Sujet du message"/>
+          <input id="textMessage" name="textMessage" type="text" required placeholder="Text"/>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>

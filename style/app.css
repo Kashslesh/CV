@@ -4,10 +4,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Noto Sans JP", sans-serif;
-  background: linear-gradient(to right, #ecf0ff 50%, #ffffff 50%) no-repeat;
 }
 a {
   text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+a:hover {
   color: black;
 }
 li {
@@ -16,6 +18,7 @@ li {
 header {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to right, #ecf0ff 50%, #ffffff 50%) no-repeat;
 }
 nav > ul {
   display: inline-flex;
@@ -23,8 +26,10 @@ nav > ul {
 }
 nav > ul > li {
   margin: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.logo > img {
+.logo > a > img {
   width: 40px;
 }
 .logo {
@@ -38,6 +43,7 @@ nav > ul > li {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: linear-gradient(to right, #ecf0ff 50%, #ffffff 50%) no-repeat;
 }
 .salut > h1 {
   font-size: 60px;
@@ -55,22 +61,25 @@ nav > ul > li {
   color: #3e64ff;
   letter-spacing: 4px;
 }
+.hero {
+  color: #3e64ff;
+  text-decoration: underline;
+}
 .item-2 {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: white;
   height: 100vh;
 }
 .photo {
   margin-left: auto;
   grid-column: 1;
-  grid-row: 1 / span 2;
 }
 .photo > img {
   width: 400px;
 }
-.infodiv{
+.infodiv {
   grid-column: 2;
-  grid-row: 1 / span 2;
 }
 .infodiv > h3 {
   margin-left: 25px;
@@ -96,12 +105,416 @@ nav > ul > li {
   font-size: 15px;
 }
 .fabicons {
-  font-size: 50px;
-  margin: auto 20px;
+  font-size: 10vh;
+  margin: auto 30px;
 }
-.pictures{
+.pictures {
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
+  width: auto;
   grid-column: 1 / span 3;
+}
+.item-3 {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  background: white;
+}
+.blocknav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  display: none;
+}
+.block-info {
+  grid-column-start: 2;
+}
+.flex {
+  display: flex;
+}
+.icons {
+  font-size: 50px;
+  color: #3e64ff;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.block > h3 {
+  color: #3e64ff;
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.date {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3e64ff;
+}
+.donnes > h4 {
+  font-weight: 800;
+  font-size: 24px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+.wrapeline {
+  width: 50%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 3%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  width: 17vw;
+  margin: 0 10px;
+  height: 26vh;
+}
+.card > h4 {
+  text-align: center;
+}
+
+.formdiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+.formdiv h4 {
+  color: red;
+  text-align: center;
+}
+
+.alert li {
+  color: red;
+  text-align: center;
+}
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding: 40px;
+  text-align: center;
+  background: white;
+}
+.box h1 {
+  color: white;
+}
+.box h2 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+.box input:focus {
+  width: 380px;
+  border-color: #2ecc71;
+}
+.box button {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  width: 150px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box button:hover {
+  background: #2ecc71;
+}
+.box a {
+  color: #03e9f4;
+}
+#textMessage {
+  height: 7vh;
+}
+.item-4 {
+  background-color: white;
+  padding-top: 4%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  height: 100vh;
+}
+.contact {
+  display: flex;
+}
+.contact > .card {
+  margin: auto 15px;
+}
+.centre {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  color: #3e64ff;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card > p {
+  font-size: 15px;
+}
+.fixed-position {
+  position: fixed;
+  top: 0;
+  left: 17.2vw;
+  display: flex;
+}
+.text-animation {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.text-animation.animation-class {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+/* Menu birger */
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: none;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 85%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #3498db;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+/* container menu */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #e0f0fa;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* des elements de menu */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: 0.25s;
+}
+.menu__box {
+  transition-duration: 0.25s;
+}
+.menu__item {
+  transition-duration: 0.25s;
+}
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .menu__btn {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .item-2 {
+    display: block;
+    height: 100%;
+  }
+  .photo > img {
+    width: 100%;
+  }
+  .infodiv > h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .fabicons {
+    font-size: 6vh;
+    margin: 0;
+  }
+  .pictures > i {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6rem;
+  }
+  .fixed-position {
+    display: none;
+  }
+  .info > ul > li {
+    font-size: 11px;
+  }
+  .remplir > ul > li {
+    font-size: 11px;
+    margin: 18px 0 10px 0;
+  }
+  .pictures {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .item-3 {
+    display: block;
+    height: 100%;
+  }
+  .svg-inline--fa.fa-w-20 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .block > h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .donnes {
+    text-align: center;
+  }
+  .donnes > h4 {
+    font-size: 20px;
+  }
+  .donnes > p {
+    font-size: 13px;
+  }
+  .flex {
+    display: block;
+  }
+  .flex > svg {
+    display: none;
+  }
+  .wrapeline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cards {
+    display: block;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 38vw;
+  }
+  .centre {
+    width: 2.5rem;
+  }
+  .item-4 > h2 {
+    font-size: 26px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .contact > .card > .fabicons {
+    font-size: 6vh;
+    margin-top: 1vh;
+  }
+  .contact .card {
+    margin-bottom: 20px;
+  }
+  .box {
+    width: 100%;
+    padding: 0;
+  }
+  .box input {
+    width: 50vw;
+  }
+  .box input:focus {
+    width: 70vw;
+  }
+  .box button {
+    width: 40vw;
+  }
+  .salut > h1 {
+    font-size: 45px;
+  }
+  .samlut > p {
+    font-size: 10px;
+  }
+  .salut > h2 {
+    font-size: 12px;
+  }
+  .logo > a > img {
+    width: 25px;
+  }
 }
